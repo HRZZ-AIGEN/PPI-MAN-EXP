@@ -1,0 +1,43 @@
+{
+  "name": "py38torch20c117PPI",
+  // Sets the run context to one level up 
+  // instead of the .devcontainer folder.
+  "context": "..",
+  // Update the 'dockerFile' property if you 
+  // aren't using the standard 'Dockerfile' filename.
+  "dockerFile": "../Dockerfile",
+  // Image when done not necessary if willing to update 
+  // the dependencies regularly.
+  //"image": "111111111111",
+
+  // Configure tool-specific properties.
+  "customizations": {
+  // Configure properties specific to VS Code.
+  "vscode": {
+    "settings": {},
+    "extensions": ["ms-vscode-remote.remote-containers",
+    "ms-python.python", "ms-toolsai.jupyter",
+    "ms-toolsai.jupyter-keymap", "ms-python.vscode-pylance",
+    "SBSnippets.pytorch-snippets", "donjayamanne.python-environment-manager",
+    "ms-vscode-remote.remote-ssh","ms-vscode-remote.remote-ssh-edit",
+    "ms-vscode-remote.vscode-remote-extensionpack",
+    "ms-vscode-remote.remote-wsl","GitHub.copilot-nightly",
+    "njpwerner.autodocstring"
+    ]}},
+
+  "remoteUser": "vscode",
+  "runArgs": [
+    "--gpus",
+    "all",
+    "--shm-size=8g",
+    "--rm"],
+
+  "appPort": [
+    "8899:8899",
+    "8898:8898"],
+
+  // Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-in-docker.
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=/home/USER/PPI-MAT-EXP/,target=/workspace,type=bind,consistency=cached",
+
+}
