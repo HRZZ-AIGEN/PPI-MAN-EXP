@@ -1,4 +1,4 @@
-# Cancer cell line drug response modeling based on multimodal attention networks
+# Drug response modeling with explanations
 Multimodal attention model for prediction of drug response based on Graph Neural Networks and Transformers to utilize the Protein Protein Interactions (PPI) in cancer cell lines from the [STRING](https://string-db.org/cgi/download?sessionId=biPKFt1UqkvP&species_text=Homo+sapiens) DB. Multimodal Attention Network in drug response predictions can be seen as representation learning problem of cancer cell line expression data and molecule representation learning to predict absolute or relative IC50 value after fitting the curve to experiment measurements.  
 <img src="figures/Info MAN.png"
      alt="MAN-png"
